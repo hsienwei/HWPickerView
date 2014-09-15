@@ -9,9 +9,9 @@ iOS 8 not support class extends from UIActionSheet
 
 ### delegate  
 
-@interface ClassName : ExtendsClassName <HWPickerViewDelegate>
+    @interface ClassName : ExtendsClassName <HWPickerViewDelegate>
 
-- (void)pickerView:(HWPickerView *)pickerView didSelectTitles:(NSArray*)titles
+    - (void)pickerView:(HWPickerView *)pickerView didSelectTitles:(NSArray*)titles
 
 ### Create PickView
 
