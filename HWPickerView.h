@@ -14,7 +14,7 @@ typedef enum HWPickerStyle
 
 @class HWPickerView;
 
-@protocol HWPickerView <NSObject>
+@protocol HWPickerViewDelegate <NSObject>
 
 - (void)pickerView:(HWPickerView *)pickerView didSelectTitles:(NSArray*)titles;
 
@@ -29,12 +29,12 @@ typedef enum HWPickerStyle
     UILabel         *_titleLabel;
 }
 
--(id) initWithTitle:(NSString *)title delegate:(__weak id<HWPickerView>) delegate;
+-(id) initWithTitle:(NSString *)title delegate:(__weak id<HWPickerViewDelegate>) delegate;
 
 -(void)showOnTop;
 -(void)setTitle:(NSString*)titleString;
 
-@property(nonatomic, weak) id<HWPickerView> delegate; // weak reference
+@property(nonatomic, weak) id<HWPickerViewDelegate> delegate; // weak reference
 @property(nonatomic, assign) HWPickerStyle actionSheetPickerStyle;   //Default is HWPickerStyleTextPicker;
 @property (nonatomic, strong, readonly) UIControl *overlayView;
 

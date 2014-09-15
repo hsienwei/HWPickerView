@@ -64,7 +64,7 @@
     return self;
 }
 
--(id) initWithTitle:(NSString *)title delegate: (__weak id<HWPickerView>)delegate
+-(id) initWithTitle:(NSString *)title delegate: (__weak id<HWPickerViewDelegate>)delegate
 {
     self = [self init];
     if(self)
