@@ -17,7 +17,6 @@ iOS 8 not support class extends from UIActionSheet
 
     NSArray *list = [[NSArray alloc]initWithObjects:@"a", @"b", @"c", @"d", nil ];
     HWPickerView *picker = [[HWPickerView alloc] initWithTitle:@"title"  delegate:self];
-    [picker setTag:TAG_PICKER];
     [picker setTitlesForComponenets:[NSArray arrayWithObjects:
                                      list,
                                      nil]];
